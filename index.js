@@ -56,6 +56,10 @@ app.get('/github', (req, res) => {
     res.json(githubData);
 });
 
+app.get('/contact', (req, res) => {
+    res.send("This is a contact page");
+})
+
 app.listen(PORT, () => {
     console.log("The server starts at Port No.: ", PORT);
 });
